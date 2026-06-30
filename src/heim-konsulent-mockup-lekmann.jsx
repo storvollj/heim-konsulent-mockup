@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Search, Star, Truck, Rocket, Home, Building2, BarChart3, TrendingUp, FileText, Lightbulb } from 'lucide-react';
 
 export default function HeimuKonsulentMockupLekmann() {
   const [activeTab, setActiveTab] = useState('live');
-  const [expandedFaq, setExpandedFaq] = useState(null);
-
-  const glossary = {
-    'Airbnb/Booking.com': 'Plattformene folk bruker for √• booke hybler og leiligheter',
-    'Automatisk prising': 'En app som endrer prisen din automatisk ‚Äî dyrere n√•r det er mange som vil booke, billigere n√•r det er f√•',
-    'Chatbot': 'En AI som svarer gjestenes vanlige sp√∏rsm√•l (hvor er n√∏kkelen, n√•r er innsjekk, osv) mens du sover',
-    'Rengj√∏ring': 'Vi betaler for rengj√∏ring mellom hver gjest, og henter inn dette fra gjestene som "rengj√∏ringsgebyr"',
-    'Netto inntekt': 'De pengene du f√•r fra Airbnb/Booking etter at de tar sin provisjon',
-  };
 
   return (
     <div style={{ background: '#2E1618', color: '#F5F3F0', fontFamily: '"Segoe UI", system-ui, sans-serif', minHeight: '100vh', padding: '0' }}>
@@ -32,7 +23,7 @@ export default function HeimuKonsulentMockupLekmann() {
       <section style={{ padding: '3rem 1.5rem', borderBottom: '1px solid rgba(230, 81, 84, 0.2)', background: 'rgba(0,0,0,0.3)' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '1.1rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.05em', color: '#E65154', margin: '0 0 1.5rem 0' }}>
-            Status n√• ‚Äî juni 2026
+            Status n√• ‚Äî Transition-fase
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1.5rem' }}>
@@ -73,7 +64,10 @@ export default function HeimuKonsulentMockupLekmann() {
             </div>
 
             <div style={{ textAlign: 'center', marginBottom: '1.5rem', background: 'rgba(230, 81, 84, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #E65154' }}>
-              <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.3rem' }}>üîç Heim Analyse</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                <Search size={20} style={{ color: '#E65154' }} />
+                <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Analyse</div>
+              </div>
               <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Vi sjekker: Kan du tjene penger p√• leiligheten din?</div>
               <div style={{ fontSize: '2rem', margin: '0.8rem 0' }}>‚Üì</div>
             </div>
@@ -86,14 +80,20 @@ export default function HeimuKonsulentMockupLekmann() {
                 </div>
                 
                 <div style={{ background: 'rgba(100, 150, 200, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #6496CB', marginBottom: '1rem' }}>
-                  <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.3rem' }}>üöÄ Heim Start</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                    <Rocket size={18} style={{ color: '#6496CB' }} />
+                    <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Start</div>
+                  </div>
                   <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Vi l√¶rer deg hvordan alt fungerer</div>
                 </div>
 
                 <div style={{ textAlign: 'center', fontSize: '0.9rem', color: '#999', marginBottom: '1rem' }}>eller skip til</div>
 
                 <div style={{ background: 'rgba(255, 167, 38, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #FFA726' }}>
-                  <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.3rem' }}>üìà Heim Optimal</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                    <TrendingUp size={18} style={{ color: '#FFA726' }} />
+                    <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Optimal</div>
+                  </div>
                   <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Vi setter opp automatisering, du gj√∏r vasking</div>
                 </div>
               </div>
@@ -105,14 +105,20 @@ export default function HeimuKonsulentMockupLekmann() {
                 </div>
 
                 <div style={{ background: 'rgba(76, 175, 80, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #4CAF50' }}>
-                  <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.3rem' }}>‚≠ê Heim Full Drift</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                    <Star size={18} style={{ color: '#4CAF50' }} />
+                    <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Full Drift</div>
+                  </div>
                   <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Vi gj√∏r alt. Du sitter hjemme.</div>
                 </div>
 
                 <div style={{ textAlign: 'center', fontSize: '0.9rem', color: '#999', marginBottom: '1rem', marginTop: '1rem' }}>eller later upgrade fra Optimal</div>
 
                 <div style={{ background: 'rgba(121, 134, 203, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #7986CB' }}>
-                  <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.3rem' }}>üè† Heim Co-host</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                    <Home size={18} style={{ color: '#7986CB' }} />
+                    <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Co-host</div>
+                  </div>
                   <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Vi gj√∏r noe, du gj√∏r resten (hybrid)</div>
                 </div>
               </div>
@@ -123,7 +129,10 @@ export default function HeimuKonsulentMockupLekmann() {
             </div>
 
             <div style={{ textAlign: 'center', marginBottom: '1.5rem', background: 'rgba(255, 152, 0, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #FFA726' }}>
-              <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.3rem' }}>üöó Heim Utrykning (add-on)</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                <Truck size={20} style={{ color: '#FFA726' }} />
+                <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Utrykning (add-on)</div>
+              </div>
               <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Hvis du trenger fysisk hjelp: vi kommer og fikser det</div>
             </div>
 
@@ -132,7 +141,10 @@ export default function HeimuKonsulentMockupLekmann() {
             </div>
 
             <div style={{ textAlign: 'center', background: 'rgba(121, 134, 203, 0.15)', padding: '1rem', borderRadius: '6px', borderLeft: '3px solid #7986CB' }}>
-              <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>üè¢ Heim Partner</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '0.3rem' }}>
+                <Building2 size={20} style={{ color: '#7986CB' }} />
+                <div style={{ fontSize: '1rem', fontWeight: '700', color: '#F5F3F0' }}>Heim Partner</div>
+              </div>
               <div style={{ fontSize: '0.85rem', color: '#BBB' }}>Vi forhandler individuelt for st√∏rre operasjoner</div>
             </div>
           </div>
@@ -149,9 +161,9 @@ export default function HeimuKonsulentMockupLekmann() {
           {/* TAB-BUTTONS */}
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', borderBottom: '1px solid rgba(230, 81, 84, 0.2)', paddingBottom: '1rem', flexWrap: 'wrap' }}>
             {[
-              { key: 'live', label: '‚úÖ Vi tilbyr n√•' },
-              { key: 'testing', label: 'üü° Vi tester' },
-              { key: 'future', label: 'üü¢ Senere (2026+)' },
+              { key: 'live', label: '‚úì Vi tilbyr n√•' },
+              { key: 'testing', label: '‚ö° Vi tester' },
+              { key: 'future', label: '‚óØ Senere (2026+)' },
             ].map(tab => (
               <button
                 key={tab.key}
@@ -179,8 +191,9 @@ export default function HeimuKonsulentMockupLekmann() {
               
               {/* ANALYSE */}
               <div style={{ background: 'rgba(100, 150, 200, 0.08)', border: '1px solid rgba(100, 150, 200, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  üîç Heim Analyse
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Search size={24} />
+                  Heim Analyse
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   F√∏rste steg: "Er det l√∏nnsomt for meg?"
@@ -210,8 +223,9 @@ export default function HeimuKonsulentMockupLekmann() {
 
               {/* FULL DRIFT */}
               <div style={{ background: 'rgba(76, 175, 80, 0.08)', border: '1px solid rgba(76, 175, 80, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  ‚≠ê Heim Full Drift
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Star size={24} />
+                  Heim Full Drift
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   Du sitter stille ‚Äî vi gj√∏r alt
@@ -243,7 +257,7 @@ export default function HeimuKonsulentMockupLekmann() {
                 <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1rem', borderRadius: '4px', marginBottom: '1rem', fontSize: '0.85rem', color: '#BBB', lineHeight: '1.6' }}>
                   <strong style={{ color: '#F5F3F0' }}>Eksempel ‚Äî en m√•ned:</strong><br/>
                   Inntekt fra Airbnb/Booking (etter deres gebyr): 50 000 kr<br/>
-                  - Vaskegebyr (5 bookinger √ó 1 300 kr): -6 500 kr<br/>
+                  - Vaskegebyr (5 bookinger x 1 300 kr): -6 500 kr<br/>
                   = Netto f√∏r ditt honorar: 43 500 kr<br/>
                   - Ditt honorar (20% av 43 500): -8 700 kr<br/>
                   = <strong>Netto til eier: 34 800 kr</strong>
@@ -256,8 +270,9 @@ export default function HeimuKonsulentMockupLekmann() {
 
               {/* UTRYKNING */}
               <div style={{ background: 'rgba(255, 152, 0, 0.08)', border: '1px solid rgba(255, 152, 0, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  üöó Heim Utrykning
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Truck size={24} />
+                  Heim Utrykning
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   N√•r du trenger fysisk hjelp p√• stedet
@@ -290,8 +305,9 @@ export default function HeimuKonsulentMockupLekmann() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
               
               <div style={{ background: 'rgba(255, 167, 38, 0.08)', border: '1px solid rgba(255, 167, 38, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  üìà Heim Optimal
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <TrendingUp size={24} />
+                  Heim Optimal
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   Vi setter opp systemene ‚Äî du gj√∏r vasking
@@ -346,8 +362,9 @@ export default function HeimuKonsulentMockupLekmann() {
               
               {/* START */}
               <div style={{ background: 'rgba(121, 134, 203, 0.08)', border: '1px solid rgba(121, 134, 203, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  üöÄ Heim Start ‚Äî Oppl√¶ring
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Rocket size={24} />
+                  Heim Start ‚Äî Oppl√¶ring
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   Vi l√¶rer deg hvordan alt fungerer | Lansering 2026
@@ -382,7 +399,7 @@ export default function HeimuKonsulentMockupLekmann() {
                       4 990 kr oppstart
                     </div>
                     <div style={{ fontSize: '0.9rem', fontWeight: '700', color: '#F5F3F0', marginBottom: '0.5rem' }}>
-                      + 990 kr/mnd √ó 3‚Äì6 mnd
+                      + 990 kr/mnd x 3‚Äì6 mnd
                     </div>
                     <p style={{ margin: '0.3rem 0 1rem 0', fontSize: '0.75rem', color: '#999' }}>
                       3‚Äì6 m√•neders binding
@@ -396,19 +413,20 @@ export default function HeimuKonsulentMockupLekmann() {
                   </div>
                 </div>
 
-                <div style={{ fontSize: '0.85rem', color: '#999', fontStyle: 'italic' }}>
-                  <strong style={{ color: '#BBB' }}>Kort sagt:</strong> Vi l√¶rer deg tekniske greier. Du blir selvstending, men vi er der hvis du blir sittende fast.
+                <div style={{ background: 'rgba(230, 81, 84, 0.15)', border: '1px solid rgba(230, 81, 84, 0.4)', padding: '1rem', borderRadius: '4px', marginBottom: '1rem', fontSize: '0.8rem', color: '#BBB', lineHeight: '1.5' }}>
+                  <strong style={{ color: '#FFA726' }}>üìù PS p√• Premium:</strong> Prisen b√∏r trolig v√¶re h√∏yere enn den er n√•. Usikker p√• balansen mellom oppstart-gebyr (4 990 kr) og m√•nedspris (990 kr). Trenger √• v√¶re mer konkret om hva som inng√•r i oppsett-m√∏ter f√∏rste m√•ned. Diskuter gjerne dette.
                 </div>
 
-                <div style={{ background: 'rgba(230, 81, 84, 0.15)', border: '1px solid rgba(230, 81, 84, 0.4)', padding: '1rem', borderRadius: '4px', marginTop: '1rem', fontSize: '0.8rem', color: '#BBB', lineHeight: '1.5' }}>
-                  <strong style={{ color: '#FFA726' }}>üìù PS p√• Premium:</strong> Prisen b√∏r trolig v√¶re h√∏yere enn den er n√•. Usikker p√• balansen mellom oppstart-gebyr (4 990 kr) og m√•nedspris (990 kr). Trenger √• v√¶re mer konkret om hva som inng√•r i oppsett-m√∏ter f√∏rste m√•ned. Diskuter gjerne dette.
+                <div style={{ fontSize: '0.85rem', color: '#999', fontStyle: 'italic' }}>
+                  <strong style={{ color: '#BBB' }}>Kort sagt:</strong> Vi l√¶rer deg tekniske greier. Du blir selvstending, men vi er der hvis du blir sittende fast.
                 </div>
               </div>
 
               {/* CO-HOST */}
               <div style={{ background: 'rgba(121, 134, 203, 0.08)', border: '1px solid rgba(121, 134, 203, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  üè† Heim Co-host ‚Äî Hybrid
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Home size={24} />
+                  Heim Co-host ‚Äî Hybrid
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   Vi gj√∏r noen ting, du gj√∏r andre | Lansering 2026
@@ -426,8 +444,9 @@ export default function HeimuKonsulentMockupLekmann() {
 
               {/* PARTNER */}
               <div style={{ background: 'rgba(121, 134, 203, 0.08)', border: '1px solid rgba(121, 134, 203, 0.3)', padding: '2rem', borderRadius: '6px' }}>
-                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0' }}>
-                  üè¢ Heim Partner ‚Äî St√∏rre operasjoner
+                <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', fontWeight: '700', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Building2 size={24} />
+                  Heim Partner ‚Äî St√∏rre operasjoner
                 </h3>
                 <p style={{ margin: '0.5rem 0 1rem 0', fontSize: '0.9rem', color: '#BBB', fontWeight: '400' }}>
                   For deg som har mange leiligheter | Lansering 2027+
@@ -463,8 +482,9 @@ export default function HeimuKonsulentMockupLekmann() {
 
           {/* SCENARIO 1: 7 ENHETER */}
           <div style={{ background: 'rgba(76, 175, 80, 0.08)', border: '1px solid rgba(76, 175, 80, 0.3)', padding: '1.5rem', borderRadius: '6px', marginBottom: '1.5rem' }}>
-            <p style={{ margin: '0 0 1rem 0', fontSize: '0.95rem', fontWeight: '600', color: '#F5F3F0' }}>
-              üìä Scenario 1: 7 enheter (kort sikt ‚Äî 2026)
+            <p style={{ margin: '0 0 1rem 0', fontSize: '0.95rem', fontWeight: '600', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <BarChart3 size={20} />
+              Scenario 1: 7 enheter (kort sikt ‚Äî 2026)
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
               <div>
@@ -484,8 +504,9 @@ export default function HeimuKonsulentMockupLekmann() {
 
           {/* SCENARIO 2: 15 ENHETER */}
           <div style={{ background: 'rgba(255, 152, 0, 0.08)', border: '1px solid rgba(255, 152, 0, 0.3)', padding: '1.5rem', borderRadius: '6px', marginBottom: '1.5rem' }}>
-            <p style={{ margin: '0 0 1rem 0', fontSize: '0.95rem', fontWeight: '600', color: '#F5F3F0' }}>
-              üìà Scenario 2: 15 enheter (medium sikt ‚Äî 2027)
+            <p style={{ margin: '0 0 1rem 0', fontSize: '0.95rem', fontWeight: '600', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <TrendingUp size={20} />
+              Scenario 2: 15 enheter (medium sikt ‚Äî 2027)
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
               <div>
@@ -505,8 +526,9 @@ export default function HeimuKonsulentMockupLekmann() {
 
           {/* SCENARIO 3: 20 ENHETER */}
           <div style={{ background: 'rgba(230, 81, 84, 0.08)', border: '1px solid rgba(230, 81, 84, 0.3)', padding: '1.5rem', borderRadius: '6px', marginBottom: '1.5rem' }}>
-            <p style={{ margin: '0 0 1rem 0', fontSize: '0.95rem', fontWeight: '600', color: '#F5F3F0' }}>
-              üöÄ Scenario 3: 20 enheter (m√•lsettingen ‚Äî 2027)
+            <p style={{ margin: '0 0 1rem 0', fontSize: '0.95rem', fontWeight: '600', color: '#F5F3F0', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Rocket size={20} />
+              Scenario 3: 20 enheter (m√•lsettingen ‚Äî 2027)
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '1rem' }}>
               <div>
@@ -541,12 +563,12 @@ export default function HeimuKonsulentMockupLekmann() {
           </h2>
 
           <p style={{ fontSize: '0.9rem', color: '#BBB', marginBottom: '2rem', lineHeight: '1.6' }}>
-            Vi har ikke konkludert for deg. Her er hva som funker. Hva tror du p√•? Hva er sp√∏rsm√•lene dine?
+            Vi er i transition. Fjellheim avsluttes august, 7 nye kommer p√•, promotering starter juni/juli. Vi har ikke konkludert p√• hvor vi g√•r. Her er hvor vi er n√•. Hva tror du p√•? Hva er sp√∏rsm√•lene dine?
           </p>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '1rem', marginBottom: '2rem' }}>
             {[
-              'Full Drift-modellen?',
+              'Full Drift scaling?',
               'Analyse-strategi?',
               'Optimal vs Full Drift?',
               'Binding og vilk√•r?',
@@ -583,7 +605,7 @@ export default function HeimuKonsulentMockupLekmann() {
           </div>
 
           <div style={{ background: 'rgba(0,0,0,0.3)', padding: '1.5rem', borderRadius: '6px', fontSize: '0.85rem', color: '#999', lineHeight: '1.6' }}>
-            <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', fontWeight: '600', color: '#BBB' }}>üìß Kontakt</p>
+            <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', fontWeight: '600', color: '#BBB' }}>Kontakt</p>
             <p style={{ margin: '0' }}>J√∏rgen Storvoll<br/>+47 994 50 506<br/>jorgen@storvoll.net</p>
           </div>
 
@@ -595,4 +617,3 @@ export default function HeimuKonsulentMockupLekmann() {
     </div>
   );
 }
-
